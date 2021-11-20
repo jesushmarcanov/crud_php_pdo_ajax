@@ -14,7 +14,7 @@
     if(isset($_POST['order'])){
         $query .= 'ORDER BY' . $_POST['order'][0]['column'] . ' ' . $_POST['order'][0]['dir'] . ' ' ;
     }else{
-        $query .= 'ORDER BY idUsuario DESC ';
+        $query .= 'ORDER BY idUsuario ASC ';
     }
 
     if ($_POST['length'] != -1) {
